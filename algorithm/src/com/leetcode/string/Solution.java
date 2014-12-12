@@ -1,4 +1,12 @@
 package com.leetcode.string;
+
+/**
+ * 字符串转换为整数 需要考虑的因素： 1. 前导符号：+，- 2. 整数溢出
+ * 
+ * @author duanmh
+ * 
+ */
+
 public class Solution {
     public int atoi(String str) {
 		if (str == null || str.length() == 0) {
