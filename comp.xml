@@ -1,21 +1,20 @@
-
-<umchartview id="CHART_1" bq_name="CHART_1" width='fill' height='250' bordercolor='#000000' onclick="CommonEvent" bq_isdata='1' bq_type='chart'
-	bq_scene='smartquery' onclick-bqtarget='CELLSGRID_1' binderfieldkey='CHART_1_binderfieldkey' binderfieldvalue='CHART_1_binderfieldvalue' fontSize='18'
+<umchartview id="CHART_1" bq_name="CHART_1" bordercolor='#000000' height='250' width='fill' borderColor='#000000' bq_isdata='1' bq_type='chart'
+	bq_scene='smartquery' onclick-bqtarget='CELLSGRID_1' ontouch-bqtarget='CELLSGRID_1' binderfieldkey='CHART_1_binderfieldkey' binderfieldvalue='CHART_1_binderfieldvalue'
+	fontSize='18' appearancename='fog' palettename='crystal' dockstylename='bottom' rotated='true' ishittestenabled='true' onopenoperation='operationmenu'
 	bindfield="CHART_1" bq_bindfield="CHART_1"
 	bq_qrydescs='{"filter":#{CHART_1_filter},"group":"#{CHART_1_group}","aggr":#{CHART_1_aggr},"sort":#{CHART_1_sort},"select":"#{CHART_1_select}"}'
 	bq_meta='{"operation":{"filter":[],"sort":[],"measure":[{"fieldname":"单件利润","fieldid":"PROFIT","values":{"type":"0","desc":[{"key":"0","value":"合计"},{"key":"1","value":"计数"},{"key":"2","value":"平均"},{"key":"3","value":"最大"},{"key":"4","value":"最小"}]}}],"group":[{"fieldname":"地区","fieldid":"AREA"}],"select":[]},"initialization":{"filter": [],"group": "AREA","aggr": [{"field":"PROFIT","aggrtype":"0"}],"bq_type_params":[{"title":"ChartData","chartType":"7","seriseName":"单件利润","seriseField":"PROFIT","key":"AREA","value":"PROFIT"}]}}'
-	bq_type_params='#{CHART_1_bq_type_params}' bq_initloaddata='1' bq_dstype='SMART' bq_dsid='1001AA10000000007JLV' appearancename='fog' palettename='crystal'
-	dockstylename='bottom' rotated='true' ishittestenabled='true' bq_param_map='{"paramtarget":"#{CHART_1_filter}","paramsource":[]}' onopenoperation='operationmenu'
+	bq_type_params='#{CHART_1_bq_type_params}' bq_initloaddata='1' bq_dstype='SMART' bq_dsid='1001AA10000000007JLV' bq_param_map='{"paramtarget":"#{CHART_1_filter}","paramsource":[]}'
 	chartType='7'
 ></umchartview>
-<singletable id="CELLSGRID_1" bq_name="CELLSGRID_1" width='fill' height='250' bq_isdata='1' bq_type='singletable' bq_scene='smartquery'
-	binderfieldkey='CELLSGRID_1_binderfieldkey' binderfieldvalue='CELLSGRID_1_binderfieldvalue' bindfield="CELLSGRID_1" bq_bindfield="CELLSGRID_1"
+<singletable id="CELLSGRID_1" bq_name="CELLSGRID_1" height='250' width='fill' header-foreground='#000000' header-background='#ededed'
+	header-font='cellsgrid_property_header-font_value' header-fontsize='14' header-height='36' haligment='center' valigment='center' table-foreground='#000000'
+	table-background='#ffffff' table-selected-background='#ededed' table-font='cellsgrid_property_table-font_value' table-fontsize='14' row-height='32'
+	interval-color-dark='#fafafa' interval-color-light='#ffffff' bq_isdata='1' bq_type='singletable' bq_scene='smartquery' binderfieldkey='CELLSGRID_1_binderfieldkey'
+	binderfieldvalue='CELLSGRID_1_binderfieldvalue' bindfield="CELLSGRID_1" bq_bindfield="CELLSGRID_1"
 	bq_qrydescs='{"filter":#{CELLSGRID_1_filter},"group":"#{CELLSGRID_1_group}","aggr":#{CELLSGRID_1_aggr},"sort":#{CELLSGRID_1_sort},"select":"#{CELLSGRID_1_select}"}'
 	bq_meta='{"operation":{"filter":[{"fieldname":"地区","fieldid":"AREA","values":{"type":"0","desc":{"bq_dstype":"SMART","bq_dsid":"1001AA10000000007JLV","bq_scene":"smartquery","bq_qrydescs":{"select":"AREA","distinct":"1"}}}},{"fieldname":"销售单价","fieldid":"PRICE","values":{"type":"0","desc":{"bq_dstype":"SMART","bq_dsid":"1001AA10000000007JLV","bq_scene":"smartquery","bq_qrydescs":{"select":"PRICE","distinct":"1"}}}}],"sort":[{"fieldname":"地区","fieldid":"AREA","values":{"type":"1","desc":[{"key":"0","value":"升序"},{"key":"1","value":"降序"}]}},{"fieldname":"销售单价","fieldid":"PRICE","values":{"type":"1","desc":[{"key":"0","value":"升序"},{"key":"1","value":"降序"}]}}],"measure":[],"group":[],"select":[{"fieldname":"地区","fieldid":"AREA"},{"fieldname":"销售单价","fieldid":"PRICE"}]},"initialization":{"filter": [{"field": "AREA","value": "#{CHART_1}","operator":"5"}],"select":"AREA,PRICE","bq_type_params":{"AREA":"地区","PRICE":"销售单价"}}}'
-	column='2' bq_type_params='#{CELLSGRID_1_bq_type_params}' bq_initloaddata='1' bq_dstype='SMART' bq_dsid='1001AA10000000007JLV' row-height='32'
-	header-height='36' header-foreground='#000000' header-background='#ededed' header-font='cellsgrid_property_header-font_value' header-fontsize='14'
-	table-foreground='#000000' table-background='#ffffff' table-selected-background='#ededed' table-font='cellsgrid_property_table-font_value'
-	table-fontsize='14' interval-color-dark='#fafafa' interval-color-light='#ffffff'
+	column='2' bq_type_params='#{CELLSGRID_1_bq_type_params}' bq_initloaddata='1' bq_dstype='SMART' bq_dsid='1001AA10000000007JLV'
 	header='[{"name":"地区","id":"AREA","valigment":"center","haligment":"left"},{"name":"销售单价","id":"PRICE","valigment":"center","haligment":"right"}]'
 	bq_param_map='{"paramtarget":"#{CELLSGRID_1_filter}","paramsource":[{"field": "AREA","value": "#{CHART_1}","operator":"5"}]}'
 ></singletable>

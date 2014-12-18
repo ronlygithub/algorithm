@@ -34,11 +34,11 @@ public class Reverse {
 
 	public static void main(String[] args) {
 
-		System.out.println(reverse("  this   is a blue sas "));
+		System.out.println(reverseWords("  this   is a blue sa "));
 
 	}
 
-	private static String reverse(String str) {
+	private static String reverseWords(String str) {
 		if (str == null || str.length() == 0) {
 			return str;
 		}

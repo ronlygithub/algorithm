@@ -37,14 +37,7 @@ package com.duanmh;
 public class Test {
 
 	public static void main(String[] args) {
-		int array[] = new int[10000000];
-		for (int i = 0; i < array.length; i++) {
-			array[i] = (int) (Math.random() * 100000);
-		}
-		long startTime = System.currentTimeMillis();
-		System.out.println(getMaxMinus(array));
-		long endTime = System.currentTimeMillis();
-		System.out.println((endTime - startTime));
+		System.out.println(sqrt(3));
 	}
 
 	private static int getMaxMinus(int a[]) {
@@ -70,6 +63,19 @@ public class Test {
 
 		return maxMinus;
 
+	}
+
+	public static int sqrt(int x) {
+		if (x <= 0) {
+			return 0;
+		}
+		double x0 = 1;
+		double tmp = 0;
+		do {
+			tmp = x0;
+			x0 = (x0 + x / x0) / 2;
+		} while (Math.abs(x0 - tmp) > 0.000001);
+		return (int) x0;
 	}
 
 }
