@@ -11,8 +11,11 @@ public class AddBinary {
 
 	public static void main(String[] args) {
 		// System.out.println(addBinary("11", "1"));
-		System.out.println(addDecimalism("120699999999999999999999999999999999999999999999999999999999999999999999999",
-				"93"));
+		// System.out.println(addDecimalism("",
+		// "93"));
+
+		System.out.println(minusDecimalism("5", "6"));
+
 	}
 
 	/**
@@ -22,6 +25,37 @@ public class AddBinary {
 	 * @param b
 	 * @return
 	 */
+	public static String minusDecimalism(String a, String b) {
+		if (a == null || "".equals(a)) {
+			return b;
+		}
+
+		if (b == null || "".equals(b)) {
+			return a;
+		}
+
+		char[] charA = a.toCharArray();
+		char[] charB = b.toCharArray();
+
+		int lengthA = charA.length - 1;
+		int lengthB = charB.length - 1;
+		int byteA;
+		int byteB;
+		int minus = 0;
+		int curr = 0;
+		StringBuilder result = new StringBuilder();
+		while (lengthA > -1 || lengthB > -1 || curr == 1) {
+			byteA = lengthA > -1 ? Character.getNumericValue(charA[lengthA--]) : 0;
+			byteB = lengthB > -1 ? Character.getNumericValue(charB[lengthB--]) : 0;
+			minus = (byteA - byteB - curr);
+			curr = minus < 0 ? 1 : 0;
+			minus = minus < 0 ? 10 + minus : minus;
+			result.append(minus);
+		}
+		return result.reverse().toString();
+
+	}
+
 	public static String addDecimalism(String a, String b) {
 		if (a == null || "".equals(a)) {
 			return b;
