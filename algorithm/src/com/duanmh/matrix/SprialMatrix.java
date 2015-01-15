@@ -3,8 +3,6 @@ package com.duanmh.matrix;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.princeton.cs.introcs.BinaryIn;
-
 public class SprialMatrix {
 	List<Integer> list = new ArrayList<Integer>();
 
@@ -39,9 +37,10 @@ public class SprialMatrix {
 			System.out.print(array[start][i] + " ");
 		}
 
-		if (start < realRow) 
-		for (int i = start + 1; i <= realRow; i++) {
-			System.out.print(array[i][realColum] + " ");
+		if (start < realRow) {
+			for (int i = start + 1; i <= realRow; i++) {
+				System.out.print(array[i][realColum] + " ");
+			}
 		}
 
 		if (start < realRow && start < realColum) {
@@ -52,9 +51,10 @@ public class SprialMatrix {
 			}
 		}
 
-		if (start < realRow-1 && start < realColum)
-		for (int i = realRow - 1; i > start; i--) {
-			System.out.print(array[i][start] + " ");
+		if (start < realRow-1 && start < realColum) {
+			for (int i = realRow - 1; i > start; i--) {
+				System.out.print(array[i][start] + " ");
+			}
 		}
 		
 		

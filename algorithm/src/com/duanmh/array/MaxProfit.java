@@ -14,7 +14,7 @@ package com.duanmh.array;
 public class MaxProfit {
 
 	public static void main(String[] args) {
-		int pri[] = { 9, 2 };
+		int pri[] = { 1, 9, 2 };
 		System.out.println(maxProfite(pri));
 	}
 
@@ -28,19 +28,14 @@ public class MaxProfit {
 			diffprices[i] = prices[i + 1] - prices[i];
 		}
 
-		result = diffprices[0];
-		int currentsum = 0;
+		result = 0;
 		for (int i = 0; i < diffprices.length; i++) {
-			currentsum += diffprices[i];
-			if (currentsum > result) {
-				result = currentsum;
-			}
-			if (currentsum < 0) {
-				currentsum = 0;
+			if (diffprices[i] > 0) {
+				result += diffprices[i];
 			}
 		}
 
-		return Math.max(result, 0);
+		return result;
 
 	}
 
