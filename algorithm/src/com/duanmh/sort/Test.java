@@ -15,8 +15,10 @@ public class Test {
 		
 		StdOut.writeFile("g:/preOrder", a);
 		long start = System.currentTimeMillis();
+		@SuppressWarnings("unused")
 		SelectionSort selectionSort = new SelectionSort();
 //		selectionSort.sort(a);
+		@SuppressWarnings("unused")
 		InsertSort insertSort = new InsertSort();
 		ShellSort shellSort = new ShellSort();
 	

@@ -6,6 +6,7 @@ public class ShellSort extends Sort{
 		
 		int length = a.length;
 		int h =1;
+		@SuppressWarnings("unused")
 		int N = length /3;
 		while(h < length/3)
 			h = 3*h+1;

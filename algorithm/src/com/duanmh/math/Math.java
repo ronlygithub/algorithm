@@ -48,6 +48,7 @@ public class Math {
 		System.out.println("trible: "+ value +"  " + tribleNewTon(125));
 	}
 
+	@SuppressWarnings("unused")
 	private static Double power(double base, int expent) {
 		if (equals(base, 0.0)) {
 			return 0.0;

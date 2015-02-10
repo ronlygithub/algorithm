@@ -56,6 +56,7 @@ public class FindNumIn2DArray {
 		}
 
 		System.out.println("输入要查找的数: ");
+		@SuppressWarnings("resource")
 		Scanner scaner = new Scanner(System.in);
 		num = scaner.nextInt();
 		int col = colNum - 1;

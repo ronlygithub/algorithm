@@ -37,10 +37,15 @@ package com.duanmh;
 public class Test {
 
 	public static void main(String[] args) {
+		String[] param = {"100","30"};
+		MergeBars.main(param);
+		
+		
+//		StdDraw.show(3);
 		System.out.println(sqrt(3));
 	}
 
-	private static int getMaxMinus(int a[]) {
+	public static int getMaxMinus(int a[]) {
 
 		if (a == null || a.length < 2) {
 			return -1;
@@ -77,5 +82,7 @@ public class Test {
 		} while (Math.abs(x0 - tmp) > 0.000001);
 		return (int) x0;
 	}
+	
+	
 
 }

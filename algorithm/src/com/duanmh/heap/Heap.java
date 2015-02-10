@@ -5,6 +5,7 @@ public class Heap {
 	
 	public static void main(String[] args) {
 		int[] a = { 0, 1, 2, 3, 5, 6, 7 };
+		@SuppressWarnings("unused")
 		Heap heap = new Heap(a);
 	}
 	
