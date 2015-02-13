@@ -3,6 +3,8 @@ package com.algorithm.bstree;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 
@@ -14,6 +16,7 @@ public class BSTree {
 	 * ¸ù½áµã
 	 */
 	private Node root;
+	private List<Node> nodes = new ArrayList<Node>();
 
 	public BSTree(String[] datas) {
 		creatrTree(datas);
@@ -55,6 +58,10 @@ public class BSTree {
 		}
 		node.size = size(node.left) + size(node.right) + 1;
 		return node;
+	}
+
+	public int size() {
+		return size(root);
 	}
 
 	/**
@@ -148,8 +155,8 @@ public class BSTree {
 	 * 
 	 * @return
 	 */
-	public Node deleteMin() {
-		return deleteMin(root);
+	public void deleteMin() {
+		root = deleteMin(root);
 
 	}
 
@@ -171,8 +178,8 @@ public class BSTree {
 	 * 
 	 * @return
 	 */
-	public Node deleteMax() {
-		return deleteMax(root);
+	public void deleteMax() {
+		root = deleteMax(root);
 	}
 
 	private Node deleteMax(Node node) {
@@ -245,6 +252,23 @@ public class BSTree {
 		}
 	}
 
+	public void print() {
+		nodes.clear();
+		print(root);
+	}
+
+	private void print(Node node) {
+		if (node == null) {
+			return;
+		}
+		print(node.left);
+		nodes.add(node);
+		System.out.println("key: " + node.key + " value: " + node.value + " size: " + node.size);
+		print(node.right);
+	}
+
+
+
 	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 
@@ -255,11 +279,13 @@ public class BSTree {
 			sb.append(s);
 		}
 		BSTree tree = new BSTree(sb.toString().trim().split(","));
+		tree.print();
 		Node max = tree.max();
 		Node min = tree.min();
 		System.out.println("max " + max.key + " : " + max.value);
 		System.out.println("min " + min.key + " : " + min.value);
 		tree.deleteMax();
+		tree.print();
 		tree.deleteMin();
 		tree.get("A");
 		max = tree.max();
@@ -267,6 +293,12 @@ public class BSTree {
 		System.out.println("max " + max.key + " : " + max.value);
 		System.out.println("min " + min.key + " : " + min.value);
 
+
+	}
+
+	public List<Node> getNodes() {
+		print();
+		return nodes;
 	}
 
 }

@@ -38,7 +38,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		String[] param = {"100","30"};
-		MergeBars.main(param);
+		// MergeBars.main(param);
 		
 		
 //		StdDraw.show(3);
