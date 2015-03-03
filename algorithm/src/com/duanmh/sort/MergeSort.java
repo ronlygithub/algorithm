@@ -82,7 +82,7 @@ public class MergeSort {
 		show(array);
 	}
 
-	private static void mergeUP(int[] a) {
+	public static void mergeUP(int[] a) {
 		if (a == null || a.length == 0) {
 			return;
 		}

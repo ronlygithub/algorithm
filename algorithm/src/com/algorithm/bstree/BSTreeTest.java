@@ -107,7 +107,7 @@ public class BSTreeTest {
 	public void max() {
 		Node max = tree.max();
 		assert (max != null);
-		assert (max.key.equals("X"));
+		assert (max.key.equals("M"));
 	}
 
 	@Test
@@ -124,14 +124,13 @@ public class BSTreeTest {
 
 	@Test
 	public void size() {
-		beforeMethod();
 		int size = tree.size();
 		assert (size == split.length);
 	}
 
 	@Test
 	public void deleteMax() {
-		beforeMethod();
+
 		List<Node> nodes = tree.getNodes();
 		 ListIterator<Node> li = nodes.listIterator();// 获得ListIterator对象
          for (li = nodes.listIterator(); li.hasNext();) {// 将游标定位到列表结尾
@@ -147,12 +146,12 @@ public class BSTreeTest {
 
 	@Test
 	public void deleteMin() {
-		beforeMethod();
 		List<Node> nodes = tree.getNodes();
 		for (Node node : nodes) {
 			Node min = tree.min();
 			assert (min == node);
 			tree.deleteMin();
+
 		}
 
 	}
