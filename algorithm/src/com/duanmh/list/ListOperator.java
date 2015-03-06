@@ -34,16 +34,16 @@ import java.util.Scanner;
  */
 public class ListOperator {
 	public static void main(String[] args) {
-		List listA = createList();
+		ListNode listA = createList();
 		show(listA);
-		List insertSort = insertSort(listA);
+		ListNode insertSort = insertSort(listA);
 		show(insertSort);
 
 	}
 
-	public static void show(List head) {
+	public static void show(ListNode head) {
 
-		List tmp = head;
+		ListNode tmp = head;
 		while (tmp != null) {
 			System.out.print(tmp.value + " ");
 			tmp = tmp.next;
@@ -51,7 +51,7 @@ public class ListOperator {
 		System.out.println("\n");
 	}
 
-	public static List getLastKth(List head, int k) {
+	public static ListNode getLastKth(ListNode head, int k) {
 		if (head == null) {
 			return null;
 		}
@@ -62,8 +62,8 @@ public class ListOperator {
 		if (k < 1) {
 			return null;
 		}
-		List fast = head;
-		List slow = head;
+		ListNode fast = head;
+		ListNode slow = head;
 		int count = 0;
 		while (count++ < k - 1) {
 			if (fast.next != null) {
@@ -83,11 +83,11 @@ public class ListOperator {
 
 	}
 
-	public static void reversePrint(List head) {
+	public static void reversePrint(ListNode head) {
 		if (head == null) {
 			return;
 		}
-		List tmp = head;
+		ListNode tmp = head;
 		if (tmp.next != null) {
 			reversePrint(tmp.next);
 		}
@@ -95,15 +95,14 @@ public class ListOperator {
 
 	}
 
-	private static List createList() {
-		List head = new List();
-		head.next = null;
-		head.value = -1;
-		List tmp = head;
-		int length = 10;
+	public static ListNode createList() {
+		ListNode head = new ListNode(-1);
+
+		ListNode tmp = head;
+		int length = 5;
 		while (length-- > 0) {
-			List newNode = new List();
-			newNode.value = (int) (Math.random() * 20);
+			ListNode newNode = new ListNode(length);
+
 			tmp.next = newNode;
 			tmp = tmp.next;
 
@@ -112,7 +111,7 @@ public class ListOperator {
 
 	}
 
-	public static List mergeList(List listA, List listB) {
+	public static ListNode mergeList(ListNode listA, ListNode listB) {
 		if (listA == null) {
 			return listB;
 		}
@@ -125,9 +124,9 @@ public class ListOperator {
 			return listA;
 		}
 
-		List newHead = null;
-		List posi = null;
-		List tmp;
+		ListNode newHead = null;
+		ListNode posi = null;
+		ListNode tmp;
 		while (listA != null && listB != null) {
 			if (listA.value <= listB.value) {
 				tmp = listA;
@@ -159,7 +158,7 @@ public class ListOperator {
 
 	}
 
-	public static List merge(List listA, List listB) {
+	public static ListNode merge(ListNode listA, ListNode listB) {
 		if (listA == null) {
 			return listB;
 		}
@@ -171,7 +170,7 @@ public class ListOperator {
 		if (listA == listB) {
 			return listA;
 		}
-		List newHead = null;
+		ListNode newHead = null;
 		if (listA.value < listB.value) {
 			newHead = listA;
 			newHead.next = merge(newHead.next, listB);
@@ -184,28 +183,28 @@ public class ListOperator {
 
 	}
 
-	public static List insertSort(List head) {
+	public static ListNode insertSort(ListNode head) {
 		if (head == null || head.next == null) {
 			return head;
 		}
 
-		List newHead = null;
+		ListNode newHead = null;
 
-		List current = head;
+		ListNode current = head;
 		while (current != null) {
 			if (newHead == null) {
 				newHead = current;
 				current = current.next;
 				newHead.next = null;
 			} else {
-				List tmp = current;
+				ListNode tmp = current;
 				current = current.next;
 				if (tmp.value < newHead.value) {
 					tmp.next = newHead;
 					newHead = tmp;
 				} else {
-					List position = null;
-					for (List newTmp = newHead; newTmp != null;) {
+					ListNode position = null;
+					for (ListNode newTmp = newHead; newTmp != null;) {
 						if (newTmp.value < tmp.value) {
 							position = newTmp;
 							newTmp = newTmp.next;
@@ -227,7 +226,7 @@ public class ListOperator {
 		return newHead;
 	}
 
-	public static List insertSortR(List head) {
+	public static ListNode insertSortR(ListNode head) {
 		if (head == null) {
 			return head;
 		}

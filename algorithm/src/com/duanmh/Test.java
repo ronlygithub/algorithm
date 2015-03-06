@@ -35,14 +35,12 @@ package com.duanmh;
  * 
  */
 public class Test {
-
+	String str = new String("good");
+	char[] c = { 'a', 'b', 'c' };
 	public static void main(String[] args) {
-		String[] param = {"100","30"};
-		// MergeBars.main(param);
-		
-		
-//		StdDraw.show(3);
-		System.out.println(sqrt(3));
+		Test t = new Test();
+		t.exchange(t.str, t.c);
+		System.out.println(t.str + t.c);
 	}
 
 	public static int getMaxMinus(int a[]) {
@@ -83,6 +81,16 @@ public class Test {
 		return (int) x0;
 	}
 	
+	public void exchange(String str, char[] c) {
+		str = "test ok";
+		c[0] = 'a';
+	}
 	
+	private void exchange(String str, int[] c) {
+		 int a = 0;
+	}
+	
+
+
 
 }

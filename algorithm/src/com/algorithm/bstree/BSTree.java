@@ -301,5 +301,59 @@ public class BSTree {
 		return nodes;
 	}
 
+	public int MinmumDepth() {
+		return MinmumDepth(root);
+	}
+
+	private int MinmumDepth(Node node) {
+		if (node == null) {
+			return 0;
+		}
+		if (node.left == null && node.right == null) {
+			return 1;
+		}
+
+		if (node.left == null) {
+			return 1 + MinmumDepth(node.right);
+		}
+		if (node.right == null) {
+			return 1 + MinmumDepth(node.left);
+		}
+		int left = MinmumDepth(node.left);
+		int right = MinmumDepth(node.right);
+		int min = left > right ? left : right;
+		return min + 1;
+
+	}
+
+	public boolean isBalanced() {
+		return isBalanced(root);
+	}
+
+	public boolean isBalanced(Node root) {
+		if (root == null) {
+			return true;
+		}
+
+		int tmp = depth(root.left) - depth(root.right);
+		if (Math.abs(tmp) > 1) {
+			return false;
+		}
+
+		return isBalanced(root.left) && isBalanced(root.right);
+
+	}
+
+	private int depth(Node root) {
+		if (root == null) {
+			return 0;
+		}
+		int left = depth(root.left);
+		int right = depth(root.right);
+
+		return 1 + Math.max(left, right);
+
+	}
+
 }
 

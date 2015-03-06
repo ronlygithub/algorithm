@@ -30,7 +30,12 @@ package com.duanmh.list;
  * @author duanmh
  * 
  */
-public class List {
+public class ListNode {
 	public int value;
-	public List next;
+	public ListNode next;
+
+	ListNode(int x) {
+		value = x;
+		next = null;
+	}
 }
