@@ -60,7 +60,6 @@ public class BinaryTree {
 
 	}
 
-	@SuppressWarnings("resource")
 	public static TreeNode creatrBT() {
 		System.out.println("ÇëÊäÈë½Úµã:");
 		Scanner s = new Scanner(System.in);

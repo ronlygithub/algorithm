@@ -146,7 +146,6 @@ public class BSTreeTest {
 
 	@Test
 	public void deleteMin() {
-		boolean balanced = tree.isBalanced();
 		List<Node> nodes = tree.getNodes();
 		for (Node node : nodes) {
 			Node min = tree.min();

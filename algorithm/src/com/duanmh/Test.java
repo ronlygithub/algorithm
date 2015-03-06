@@ -40,7 +40,7 @@ public class Test {
 	public static void main(String[] args) {
 		Test t = new Test();
 		t.exchange(t.str, t.c);
-		System.out.println(t.str + t.c);
+
 	}
 
 	public static int getMaxMinus(int a[]) {
@@ -86,9 +86,7 @@ public class Test {
 		c[0] = 'a';
 	}
 	
-	private void exchange(String str, int[] c) {
-		 int a = 0;
-	}
+
 	
 
 

@@ -56,7 +56,6 @@ public class ListOperator {
 			return null;
 		}
 		System.out.println("\n «Î ‰»Îk÷µ: ");
-		@SuppressWarnings("resource")
 		Scanner s = new Scanner(System.in);
 		k = s.nextInt();
 		if (k < 1) {

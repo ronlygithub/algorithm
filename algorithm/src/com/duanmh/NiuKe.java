@@ -13,7 +13,7 @@ public class NiuKe {
 		}
 
 		public static void main(String[] args) {
-		NiuKe t = new NiuKe();
+
 		}
 	}
 
