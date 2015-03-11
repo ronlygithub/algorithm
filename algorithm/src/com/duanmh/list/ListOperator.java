@@ -36,8 +36,9 @@ public class ListOperator {
 	public static void main(String[] args) {
 		ListNode listA = createList();
 		show(listA);
-		ListNode insertSort = insertSort(listA);
-		show(insertSort);
+		// ListNode insertSort = insertSort(listA);
+		ListNode deleteDuplicates = deleteDuplicates(listA);
+		show(deleteDuplicates);
 
 	}
 
@@ -95,12 +96,19 @@ public class ListOperator {
 	}
 
 	public static ListNode createList() {
-		ListNode head = new ListNode(-1);
-
-		ListNode tmp = head;
-		int length = 5;
+		ListNode head = null;
+		ListNode tmp = null;
+		int length = 2;
 		while (length-- > 0) {
-			ListNode newNode = new ListNode(length);
+			if (head == null) {
+				head = new ListNode((int) (Math.random() * 5));
+				head.value = 1;
+				tmp = head;
+				continue;
+			}
+
+			ListNode newNode = new ListNode((int) (Math.random() * 5));
+			newNode.value = 1;
 
 			tmp.next = newNode;
 			tmp = tmp.next;
@@ -230,6 +238,28 @@ public class ListOperator {
 			return head;
 		}
 		insertSortR(head.next);
+		return head;
+
+	}
+
+	public static ListNode deleteDuplicates(ListNode head) {
+		if (head == null) {
+			return head;
+		}
+		ListNode slow = head;
+		ListNode fast = head;
+		while (fast != null) {
+			if (fast.value == slow.value) {
+				fast = fast.next;
+				if (fast == null) {
+					slow.next = fast;
+					slow = fast;
+				}
+				continue;
+			}
+			slow.next = fast;
+			slow = fast;
+		}
 		return head;
 
 	}

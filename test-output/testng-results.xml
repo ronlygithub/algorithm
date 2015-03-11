@@ -2,76 +2,76 @@
 <testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2716" started-at="2015-03-06T02:33:37Z" finished-at="2015-03-06T02:33:39Z">
+  <suite name="Default suite" duration-ms="89481" started-at="2015-03-09T08:15:25Z" finished-at="2015-03-09T08:16:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2716" started-at="2015-03-06T02:33:37Z" finished-at="2015-03-06T02:33:39Z">
+    <test name="Default test" duration-ms="89481" started-at="2015-03-09T08:15:25Z" finished-at="2015-03-09T08:16:54Z">
       <class name="com.algorithm.bstree.BSTreeTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeSuite" is-config="true" duration-ms="6" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeTest" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeClass" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeClass" is-config="true" duration-ms="0" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="BSTree()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="BSTree" duration-ms="3" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="BSTree()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="BSTree" duration-ms="3" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BSTree -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="deleteMax()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="deleteMax" duration-ms="0" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="deleteMax()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="deleteMax" duration-ms="1" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteMax -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="deleteMin()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="deleteMin" duration-ms="2650" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:15:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="deleteMin()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="deleteMin" duration-ms="89414" started-at="2015-03-09T16:15:25Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteMin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:37Z" finished-at="2015-03-06T10:33:37Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="2" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="deleteString()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="deleteString" duration-ms="2" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="deleteString()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="deleteString" duration-ms="2" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteString -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="f" duration-ms="2" started-at="2015-03-06T10:33:39Z" data-provider="dp" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="f" duration-ms="1" started-at="2015-03-09T16:16:54Z" data-provider="dp" finished-at="2015-03-09T16:16:54Z">
           <params>
             <param index="0">
               <value>
@@ -87,15 +87,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="f" duration-ms="1" started-at="2015-03-06T10:33:39Z" data-provider="dp" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="f" duration-ms="0" started-at="2015-03-09T16:16:54Z" data-provider="dp" finished-at="2015-03-09T16:16:54Z">
           <params>
             <param index="0">
               <value>
@@ -111,79 +111,79 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getString()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="getString" duration-ms="2" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="getString()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="getString" duration-ms="3" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getString -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="max()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="max" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="max()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="max" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- max -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="min()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="min" duration-ms="0" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="min()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="min" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- min -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="putStringint()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="putStringint" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="putStringint()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="putStringint" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putStringint -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="size()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="size" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- size -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="size()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="size" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterClass" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        </test-method> <!-- size -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterClass" is-config="true" duration-ms="1" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterTest" is-config="true" duration-ms="0" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterTest" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterSuite" is-config="true" duration-ms="1" started-at="2015-03-06T10:33:39Z" finished-at="2015-03-06T10:33:39Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.algorithm.bstree.BSTreeTest@987197]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-03-09T16:16:54Z" finished-at="2015-03-09T16:16:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

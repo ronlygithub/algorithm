@@ -4,7 +4,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 
@@ -16,6 +19,11 @@ public class BSTree {
 	 * 根结点
 	 */
 	private Node root;
+
+	public Node getRoot() {
+		return root;
+	}
+
 	private List<Node> nodes = new ArrayList<Node>();
 
 	public BSTree(String[] datas) {
@@ -355,5 +363,75 @@ public class BSTree {
 
 	}
 
+	/**
+	 * 判断两棵树是否相等
+	 * 
+	 * @param p
+	 * @param q
+	 * @return
+	 */
+	public boolean isSameTree(Node p, Node q) {
+		if (p == null && q == null) {
+			return true;
+		}
+
+		if (p == null || q == null) {
+			return false;
+		}
+
+		if (p.value != q.value) {
+			return false;
+		}
+		return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+
+	}
+
+	public void levelOrderVist() {
+		levelOrderVist(root);
+	}
+
+	/**
+	 * 层序遍历
+	 */
+	public void levelOrderVist(Node root) {
+		if (root == null) {
+			return;
+		}
+		Node node = root;
+		Deque<Node> quen = new LinkedList<Node>();
+		Stack<Integer> vist = new Stack<Integer>();
+
+		quen.add(node);
+		while (!quen.isEmpty()) {
+			if (node.left != null) {
+				quen.add(node.left);
+			}
+			if (node.right != null) {
+				quen.add(node.right);
+			}
+			Node pop = quen.pop();
+			vist.add(pop.value);
+			node = quen.peek();
+		}
+
+	}
+
+	public List<List<Integer>> levelOrderBottom(Node root) {
+		LinkedList<List<Integer>> list = new LinkedList<List<Integer>>();
+		addLevel(list, 0, root);
+		return list;
+	}
+
+	private void addLevel(LinkedList<List<Integer>> list, int level, Node node) {
+		if (node == null) {
+			return;
+		}
+		if (list.size() - 1 < level) {
+			list.addLast(new LinkedList<Integer>());
+		}
+		list.get(list.size() - 1 - level).add(node.value);
+		addLevel(list, level + 1, node.left);
+		addLevel(list, level + 1, node.right);
+	}
 }
 

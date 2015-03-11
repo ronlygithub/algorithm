@@ -146,6 +146,7 @@ public class BSTreeTest {
 
 	@Test
 	public void deleteMin() {
+
 		List<Node> nodes = tree.getNodes();
 		for (Node node : nodes) {
 			Node min = tree.min();

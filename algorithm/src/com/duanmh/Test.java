@@ -35,60 +35,18 @@ package com.duanmh;
  * 
  */
 public class Test {
-	String str = new String("good");
-	char[] c = { 'a', 'b', 'c' };
-	public static void main(String[] args) {
-		Test t = new Test();
-		t.exchange(t.str, t.c);
-
+	public static void main(String[] args) throws Exception {
+		System.out.println(Test.test());
 	}
 
-	public static int getMaxMinus(int a[]) {
-
-		if (a == null || a.length < 2) {
-			return -1;
+	static int test() throws Exception {
+		int x = 1;
+		try {
+			x++;
+			return x;
+		} finally {
+			++x;
+			System.out.println("finally " + x);
 		}
-		int maxMinus = a[0] - a[1];
-		int minInArray = a[0];
-		int maxInArray = a[0];
-		for (int i = 0; i < a.length; i++) {
-			if (a[i] < minInArray) {
-				minInArray = a[i];
-			}
-
-			if (a[i] > maxInArray) {
-				maxInArray = a[i];
-			}
-		}
-
-		maxMinus = maxInArray - minInArray;
-		System.out.println("max=" + maxInArray + " , min=" + minInArray);
-
-		return maxMinus;
-
 	}
-
-	public static int sqrt(int x) {
-		if (x <= 0) {
-			return 0;
-		}
-		double x0 = 1;
-		double tmp = 0;
-		do {
-			tmp = x0;
-			x0 = (x0 + x / x0) / 2;
-		} while (Math.abs(x0 - tmp) > 0.000001);
-		return (int) x0;
-	}
-	
-	public void exchange(String str, char[] c) {
-		str = "test ok";
-		c[0] = 'a';
-	}
-	
-
-	
-
-
-
 }
