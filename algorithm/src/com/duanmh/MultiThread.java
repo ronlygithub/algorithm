@@ -3,16 +3,37 @@ package com.duanmh;
 public class MultiThread {
 
 	public static void main(String[] args) {
-		new Thread(new Thread1()).start();
-		try {
-			Thread.sleep(10);
-		} catch (Exception e) {
-			e.printStackTrace();
+
+		Thread[] odd = new Thread[5];
+		for (int i = 0; i < odd.length; i++) {
+			odd[i] = new Thread(new Thread1());
 		}
-		new Thread(new Thread2()).start();
+
+		Thread[] even = new Thread[5];
+		for (int i = 0; i < even.length; i++) {
+			even[i] = new Thread(new Thread2());
+		}
+
+		for (int i = 0; i < 5; i++) {
+			even[i].start();
+			odd[i].start();
+		}
+
+
 	}
 
-	private static class Thread1 implements Runnable {
+	private static class Thread1 extends Thread {
+		private int posi;
+		private int[] value;
+
+		public Thread1(int[] value, int posi) {
+			this.posi = posi;
+			this.value = value;
+		}
+
+		public Thread1() {
+			// TODO Auto-generated constructor stub
+		}
 
 		@Override
 		public void run() {

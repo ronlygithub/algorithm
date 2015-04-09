@@ -38,7 +38,7 @@ public class MergeSort {
 
 		int[] a = { 2, 4, 1, 8, 6, 3, 9, 5, 47, -5 };
 		tmp = new int[a.length];
-		mergeUP(a);
+		// mergeUP(a);
 		mergeDownSort(a, 0, a.length - 1);
 		System.out.println("\n");
 

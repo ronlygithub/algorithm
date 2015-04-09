@@ -30,10 +30,6 @@ package com.duanmh;
  * @author duanmh
  * 
  */
-/**
- * @author duanmh
- * 
- */
 public class Test {
 	public static void main(String[] args) throws Exception {
 		System.out.println(Test.test());
@@ -50,3 +46,10 @@ public class Test {
 		}
 	}
 }
+
+
+
+//数组分割问题2.cpp : Defines the entry point for the console application.
+//
+
+
