@@ -22,10 +22,14 @@ You should return [1, 3, 4].
 public class RightSideView {
 
 	private class TreeNode {
+		@SuppressWarnings("unused")
 		int val;
+		@SuppressWarnings("unused")
 		TreeNode left;
+		@SuppressWarnings("unused")
 		TreeNode right;
 
+		@SuppressWarnings("unused")
 		TreeNode(int x) {
 			val = x;
 		}

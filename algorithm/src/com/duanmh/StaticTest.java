@@ -6,6 +6,7 @@ public class StaticTest {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		A a = new A();
 		B b = new B();

@@ -23,9 +23,12 @@ public class MultiThread {
 	}
 
 	private static class Thread1 extends Thread {
+		@SuppressWarnings("unused")
 		private int posi;
+		@SuppressWarnings("unused")
 		private int[] value;
 
+		@SuppressWarnings("unused")
 		public Thread1(int[] value, int posi) {
 			this.posi = posi;
 			this.value = value;
