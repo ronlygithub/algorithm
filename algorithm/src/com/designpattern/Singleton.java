@@ -68,8 +68,9 @@ class Threads implements Runnable {
 	public void run() {
 		int i = 0;
 		while (i < 5) {
+			@SuppressWarnings("static-access")
 			int hashCode = o.getInstance().hashCode();
-			// System.out.println(name + " " + hashCode);
+			System.out.println(name + " " + hashCode);
 
 			i++;
 		}
